@@ -46,7 +46,6 @@ class Login extends StatelessWidget {
                 onChanged: (text) => loginStore.changeEmail(text),
                 validator: (value) => loginStore.validate(value),
               ),
-              Text('${loginStore.emailError}'), // エラーメッセージ
             ],
           ));
     });
